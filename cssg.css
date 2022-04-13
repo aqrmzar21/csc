@@ -134,6 +134,7 @@ h2 {
 	flex-direction: column;
 	justify-content: space-between;
 	box-shadow: 3px;
+	border-radius: 3%;
 }
 
 .text-content2 a {
