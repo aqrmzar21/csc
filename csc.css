@@ -29,11 +29,6 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-.box-two {
-	width: 560px;
-	height: 50px;
-	background: linear-gradient(to right, #dce35b, #45b649);
-}
 .box {
   position: relative;
   background-color: rgb(103, 51, 119);
@@ -46,6 +41,7 @@ body {
 
 .box:hover {
   transform: translateY(-10px);
+  background-color: #090221;
 }
 
 .box::after {
@@ -56,7 +52,8 @@ body {
   width: 560px;
   height: 50px;
   transform: rotate(-40deg) translateY(-100px);
-  background: linear-gradient(to right, #f86b47, #e41102);
+  background: linear-gradient(to right, #dce35b, #45b649);
+  /* background: linear-gradient(to right, #f86b47, #e41102); */
   z-index: 0;
 }
 
@@ -150,13 +147,13 @@ body {
 }
 
 /* Overlay gelap untuk background agar teks lebih jelas */
-/* body::before {
+body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
-} */
+}
 
 /* Efek hover tombol Learn More */
 .text-content a:hover {
