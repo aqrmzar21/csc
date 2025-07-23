@@ -29,7 +29,11 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
+.box-two {
+	width: 560px;
+	height: 50px;
+	background: linear-gradient(to right, #dce35b, #45b649);
+}
 .box {
   position: relative;
   background-color: rgb(103, 51, 119);
@@ -71,40 +75,44 @@ body {
   background-color: #303df5;
   color: white;
   padding: 1rem;
+	left: 2px;
+  width: 295px;
+  height: 415px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   z-index: 1;
-  min-height: 350px;
+  border-radius: 3%;
+  /* min-height: 350px; */
 }
 
-.text-content h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 
 .text-content a {
   text-decoration: none;
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 0 10px;
   border: 2px solid white;
   color: white;
   width: fit-content;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 6px;
   transition: background-color 0.3s;
+  margin-bottom: 2rem;
 }
 
 .text-content a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.text-content h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 
 .fc {
   position: absolute;
   bottom: 20px;
-  right: 20px;
+  margin: 20px auto;
   display: flex;
   gap: 10px;
   list-style: none;
@@ -142,13 +150,13 @@ body {
 }
 
 /* Overlay gelap untuk background agar teks lebih jelas */
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
-}
+} */
 
 /* Efek hover tombol Learn More */
 .text-content a:hover {
